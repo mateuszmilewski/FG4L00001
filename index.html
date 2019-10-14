@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl" ng-app="FG4LApp">
+	<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+		<script type="text/javascript" src="jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+    <script async src="https://www.youtube.com/iframe_api"></script>
+
+
+    <script>
+      PLAYERS = [];
+      ARR = [...Array(20).keys()].map( x => ++x );
+    </script>
+
+
+
+    <title>FG4L</title>
+    
+    
+		<script type="text/javascript">
+    
+			
+			
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	</head>
+
+	<body>
+    <!-- hello in body -->
+    
+    <div id="container">
+      <div ng-controller="mainController">
+        <!-- <h1> {{ fg4l.nm }} </h1> -->
+
+        <youtube id="y-{{indx}}" ng-repeat="indx in fg4l.arr"></youtube>
+
+
+      </div>
+    </div>
+    
+	</body>
+</html>
